@@ -1,0 +1,31 @@
+<div class="card" style="width: 30rem;">
+    <div class="col-md-6">
+
+        <div class="card-body">
+            <h5 class="card-title">Payment Result</h5>
+            <form>
+                <div class="form-group">
+                    <label>QrData</label>
+                    <input type="text" class="form-control" name="QRdata" placeholder="Qr Data">
+                </div>
+                <button type="submit" (click)="getPayment()" class="btn btn-primary">Get Payment</button>
+            </form>
+            <br>
+            <br>
+
+            ApplicationID : {{payment.results.applicationID}}
+            <br>
+            SessionID : {{payment.results.sessionID}}
+            <br>
+            Pos ID :{{payment.results.posID}}
+            <br>
+            Return Code : {{payment.results.returnCode}}
+            <br>
+            Return Desc : {{payment.results.returnDesc}}
+            <br>
+            <br>
+            Errors :{{payment.error}}
+
+        </div>
+    </div>
+</div>
