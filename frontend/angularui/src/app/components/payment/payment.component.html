@@ -3,16 +3,7 @@
 
         <div class="card-body">
             <h5 class="card-title">Payment Result</h5>
-            <form>
-                <div class="form-group">
-                    <label>QrData</label>
-                    <input type="text" class="form-control" name="QRdata" placeholder="Qr Data">
-                </div>
-                <button type="submit" (click)="getPayment()" class="btn btn-primary">Get Payment</button>
-            </form>
             <br>
-            <br>
-
             ApplicationID : {{payment.results.applicationID}}
             <br>
             SessionID : {{payment.results.sessionID}}
